@@ -1,0 +1,9 @@
+Haar Cascades is a ML based object detection method
+
+detectMultiScale() -> scan and detect face 
+
+image, scale factor, minNeighbours
+
+scale factor -> how much zoom to check/find the face 
+
+minNeighbours -> min no of attempts to check the face

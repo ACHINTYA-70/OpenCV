@@ -1,0 +1,29 @@
+IMAGE PROCESSING
+
+CANNY EDGE DETECTION   -->  IMAGE THRESHOLDING   -->  BITWISE OPERATIONS         
+(detect edges)          (clean black/white image)     (combine/cut photos)
+
+
+CANNY EDGE DETECTION --> detect borders , separate objects , lane detection , etc 
+
+cv2.Canny(image,threshold1,threshold2)
+                    t1         t2 
+
+t1 and t2 are boundaries lower/upper if pixel is > threshold then white else black
+
+t1 and t2 is to detect weak/strong edge
+
+THRESHOLDING --> image converted into grayscale acc to points given and converted into binary number
+
+ret,ther=cv2.threshold(img,threshold_value,max_value,type_of_method)
+
+
+
+BITWISE OPERATIONS --> AND,OR,NOT
+
+cv2.bitwise_and(img1,img2)
+cv2.bitwise_or(img1,img2)
+cv2.bitwise_not(img1)
+
+img1,img2 will be of same size
+using black/white or grayscale mask

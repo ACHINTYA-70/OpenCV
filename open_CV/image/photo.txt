@@ -1,0 +1,48 @@
+FOR LOAD THE IMAGE
+cv2.imread()
+
+FOR DISPLAY/OPEN THE IMAGE
+cv2.imshow()
+cv2.waitkey()
+cv2.destroyAllWindows()
+
+FOR SAVE/DOWNLOAD THE IMAGE
+cv2.imwrite()
+
+FOR DIMENSIONS
+if grayscale only height,width
+if colorimage(RGB) height,width,channels -> cv2.shape
+
+GRAYSCALE CONVERSION
+we use cv2.cvtColor() for convert color 
+
+FOR RESIZE THE IMAGE
+cv2.resize(source,dimension_Size,fx,fy,interpolation)
+width,height
+
+FOR CROPPING THE IMAGE
+-> using slicing in numpy = yaxis is top-2-bottom whereas xaxis is left-2-right
+image[startY:endY , startX:endX]
+
+FOR ROTATING THE IMAGE
+m=cv2.getRotationMatrix2D(center,angle,scale) --> center=divide by 2, angle=degrees rotate, scale=zoom in/out
+cv2.warpAffine(image,m,(width,height)) -->original image, m =formula, width,height=new size in tuple
+
+FOR FLIPPING THE IMAGE
+cv2.flip(image,flipcode) 
+flipcode will be 1,0,-1   ----> 1 for horizontal,0 for vertical,-1 for both
+
+FOR DRAWING A LINE 
+cv.line(image,pt1,pt2,color,thickness)
+
+# FOR DRAWING A RECTANGLE
+cv.rectangle(img,pt1,pt2,color,thickness)
+pt1=top left point 
+pt2=bottom right point 
+like opp points
+
+FOR DRAWING A CIRCLE 
+cv.line(image,center,radius,color,thickness)
+
+FOR ADDING TEXT
+cv2.putText(image,text=,org=,font=,fontScale=,color=,thickness=) --> org=(x,y)

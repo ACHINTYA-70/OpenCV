@@ -1,0 +1,30 @@
+Gaussion Blur -> smooth , reduce sharpness 
+remove noise,smooth etc
+
+cv2.GaussionBlur(image,(kernel_size_x,kernel_size_y),sigma)
+
+kernel_size -> window size always odd (3,3) (5,5)kernel is matrix 
+sigma -> how strong the blur 
+
+Multiply kernel values with pixel values.
+Add all results.
+Replace the center pixel with the new value.
+Move kernel to next pixel.
+
+
+Median Blur --> 
+
+cv2.medianBlur(image,kernel_size)
+
+Median blur is very good for removing
+Salt and pepper noise, Random noise, Small distortions
+
+
+Sharpening Image --> opposite of blurring
+
+cv2.filter2D(image,ddepth,kernel)
+
+kernel is 3x3 matrix which ahs to be given
+ddepth --> 
+
+it created or enhance the cenetr pixel so that it showed as bright sharped etc and corner pixels become very low 

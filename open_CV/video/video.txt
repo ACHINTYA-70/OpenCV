@@ -1,0 +1,17 @@
+cv2.captureVideo(source) -->here source means internal(0) or external camera(1) 
+
+ret -> means true if frame captured
+frame -> means image
+
+0xFF == ord("q") -> means 0xFF detacts press key and ord converts q to asciinumber 
+
+
+FOR SAVING THE VIDEO 
+
+# cv2.videoCapture()
+# cv2.videoWriter(filename,codec,fps,frame_size)
+# cv2.release()
+
+videoWriter -> .avi/mp4
+avi-> audio video interleave
+codec-> compression format
